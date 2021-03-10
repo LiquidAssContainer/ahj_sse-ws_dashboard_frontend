@@ -1,0 +1,90 @@
+.instance {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.instance:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.instance > div:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.instance_label {
+  display: inline-block;
+  width: 60px;
+}
+
+.instance_status_name {
+  position: relative;
+  padding-left: 25px;
+
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.status_running::before,
+.status_stopped::before,
+.status_changing::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 0;
+}
+
+.status_running::before {
+  background-color: #00d200;
+}
+
+.status_stopped::before {
+  background-color: #000;
+}
+
+.status_changing::before {
+  background-image: url('../img/loading.svg');
+}
+
+.instance_btn {
+  min-width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instance_btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.instance_run-btn {
+  background-image: url('../img/run.svg');
+}
+
+.instance_stop-btn {
+  background-image: url('../img/stop.svg');
+}
+
+.instance_remove-btn {
+  background-image: url('../img/remove.svg');
+  margin-left: 4px;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+.instances_create-btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: inherit;
+
+  font-size: 16px;
+  text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.instances,
+.worklog {
+  /* width: 50%; */
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+@media (min-width: 679px) {
+  .instances,
+  .worklog {
+    width: 50%;
+  }
+
+  .instances {
+    margin-right: 20px;
+  }
+}
+
+.instances,
+.worklog {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.instance_list_wrapper,
+.worklog-record_list_wrapper {
+  overflow-y: auto;
+  margin-bottom: 15px;
+}

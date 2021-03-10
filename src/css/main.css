@@ -1,0 +1,49 @@
+@import 'cloud-dashboard.css';
+@import 'instances.css';
+@import 'worklog.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 678px) {
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .instances,
+  .worklog {
+    width: 100%;
+    height: 50%;
+  }
+
+  .instances {
+    margin-bottom: 10px;
+  }
+}
